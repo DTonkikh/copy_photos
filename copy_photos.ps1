@@ -1,4 +1,4 @@
-﻿param([string]$From='D:\Фотки',[string]$To='C:\Test\')
+﻿param([string]$From='D:\',[string]$To='C:\Test\')
 
 $ImgsFound = gci -Path $From -Include *.jpeg, *.png, *.gif, *.jpg, *.bmp, *.png, *.mov, *.tiff, *.heic, *.mp4, *.avi, *.wmv, *.mpg -Recurse | select -Property FullName, Name, BaseName, Extension
 
