@@ -11,3 +11,4 @@ The script will copy images with file extensions *.jpeg, *.png, *.gif, *.jpg, *.
 
 For images (except *.heic) EXIF data will be checked first. If date a photo was taken is not found, change date from file metadata will be taken.
 For video files only metadata is concerned.
+
