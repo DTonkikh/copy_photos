@@ -2,7 +2,7 @@
 
 $ImgsFound = gci -Path $From -Include *.jpeg, *.png, *.gif, *.jpg, *.bmp, *.png, *.mov, *.tiff, *.heic, *.mp4, *.avi, *.wmv, *.mpg -Recurse | select -Property FullName, Name, BaseName, Extension
 
-Write-Host -Object ("# of pictures suitable for renaming in " + $Path + ": " + $ImgsFound.Count + "`n") 
+Write-Host -Object ("# of pictures suitable for renaming in " + $From + ": " + $ImgsFound.Count + "`n") 
 $videoFormats = ".mov", ".mp4", ".avi", ".wmv", ".mpg", ".MOV", ".MP4", ".AVI", ".WMV", ".MPG", ".heic", ".HEIC"
 
 foreach ($Img in $ImgsFound)
